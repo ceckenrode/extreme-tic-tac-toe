@@ -1,6 +1,6 @@
 var app = (function(_my) {
   function initGame() {
-    console.log(_my)
+    console.log(_my);
     _my.fb
       .ref('games')
       .push({

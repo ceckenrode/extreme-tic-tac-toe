@@ -31,6 +31,15 @@ var app = (function(_my, firebase) {
       _my.schema = snapshot.val();
       _my.PLAYER_ID = _my.utils.getPlayerID();
       _my.$view.update();
+      // add code here to get a link for the other user
+      console.log(
+          window.location +
+            window.location.pathname +
+            '?game_id=' +
+            _my.gameID +
+            '&player_id=' +
+            _my.schema.players.PLAYER_TWO.id
+        );
     });
   }
 
