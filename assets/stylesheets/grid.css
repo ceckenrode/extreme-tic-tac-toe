@@ -1,0 +1,46 @@
+#grid {
+  width: 40vw;
+  height: 40vw;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#grid .row {
+  height: 33.3333%;
+  border: 1px solid #ECF0F1;
+  border-left: none;
+  border-right: none;
+}
+
+#grid .row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#grid .row:first-child, #grid .row:last-child  {
+  height: 33.3333%;
+  border: none;
+}
+
+#grid .col {
+  width: 33.3333%;
+  height: 100%;
+  float: left;
+  border: 1px solid #ECF0F1;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+#grid .col:first-child, #grid .col:last-child  {
+  border: none;
+}
+
+.fa.fa-circle-o, .fa.fa-times  {
+  font-size: 120px;
+  margin-top: 25px;
+  display: block;
+  text-align: center;
+}

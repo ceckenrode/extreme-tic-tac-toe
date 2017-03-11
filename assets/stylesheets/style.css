@@ -1,0 +1,18 @@
+@import 'reset.css';
+@import 'typography.css';
+@import 'grid.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #34495e;
+  color: #ECF0F1;
+}
+
+#app {
+  min-height: 100%;
+  position: relative;
+}
